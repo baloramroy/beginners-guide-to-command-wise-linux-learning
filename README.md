@@ -24,7 +24,7 @@ Example structure:
 
 ```
 commands/
- ├── ls.md
+ ├── Basic system information
  ├── cd.md
  ├── mkdir.md
  ├── grep.md
@@ -39,14 +39,15 @@ commands/
 
 We will follow a **command-by-command** learning path:
 
-1. Start with basic navigation commands
-2. File and directory management
-3. Viewing and searching
-4. User and permission management
-5. Process and service management
-6. Archiving and compression
-7. Networking commands
-8. System monitoring commands
+1. Basic system information
+2. Start with basic navigation commands
+3. File and directory management
+4. Viewing and searching
+5. User and permission management
+6. Process and service management
+7. Archiving and compression
+8. Networking commands
+9. System monitoring commands
 
 Each topic includes real-life examples from production Linux systems.
 
