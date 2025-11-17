@@ -25,7 +25,7 @@ Example structure:
 ```
 commands/
  ├── Basic system information
- ├── cd.md
+ ├── Date Time Command
  ├── mkdir.md
  ├── grep.md
  ├── ps.md
