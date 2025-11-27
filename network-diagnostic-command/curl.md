@@ -5,7 +5,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Basic `curl` Commands
+### Basic `curl` Commands
 
 - Fetch and display a webpage or API response directly in the terminal
   
@@ -36,7 +36,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Silent, Fail, Redirect Options of curl Command
+### Silent, Fail, Redirect Options of curl Command
 
 - Fetches the content quietly without showing progress bar or status messages
   
@@ -82,7 +82,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Authentication
+### Authentication
 
 - Send a username and password for websites or APIs that require basic authentication
 
@@ -95,7 +95,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## SSL/TLS Related Commands
+### SSL/TLS Related Commands
 
 - Connect to an HTTPS site while ignoring certificate validation errors
 
@@ -120,7 +120,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Debug / Troubleshooting Options
+### Debug / Troubleshooting Options
 
 - Show detailed request and response including headers and connection information
   
@@ -169,7 +169,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Downloading & Uploading
+### Downloading & Uploading
 
 - Upload a file to a server using multipart/form-data
   
@@ -194,7 +194,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Proxy Related
+### Proxy Related
 
 - Send your request through an HTTP proxy server
   
@@ -210,7 +210,7 @@ It is a command-line tool that allows users to **interact** with **web servers**
 
 ---
 
-## Rate Limits / Timeout
+### Rate Limits / Timeout
 
 - Cancel the request if it takes longer than the specified number of seconds
   
