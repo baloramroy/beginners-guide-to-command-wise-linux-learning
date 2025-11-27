@@ -5,7 +5,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## Basic wget Commands
+### Basic wget Commands
 
 - Download a file using its original name
 
@@ -36,7 +36,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## Advance Download Control Options
+### Advance Download Control Options
 
 - Resume an interrupted download
   
@@ -85,7 +85,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## SSL/TLS Related
+### SSL/TLS Related
 
 - Ignore invalid SSL certificates
 
@@ -98,7 +98,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## Website Download Commands
+### Website Download Commands
 
 - Download an entire website (mirror)
 
@@ -129,7 +129,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## Proxy Related Commands
+### Proxy Related Commands
 
 - Use a proxy server for downloading
   
@@ -142,7 +142,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## Timeout & Retry Handling
+### Timeout & Retry Handling
 
 - Set download timeout
   
@@ -164,7 +164,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## Network & Troubleshooting
+### Network & Troubleshooting
 
 - Check if a URL is reachable (no download)
 
@@ -179,7 +179,7 @@ The **wget** command is used for non-interactive downloading of files from HTTP,
 
 ---
 
-## FTP Download Commands
+### FTP Download Commands
 
 - Download file from an FTP server
 
