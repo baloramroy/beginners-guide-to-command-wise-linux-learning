@@ -7,7 +7,7 @@ The `cd` command is used to change the **current working directory** in Linux an
 
 The `cd` command typically doesn't use **options** in the same way as other commands. Instead, it relies on **path arguments** and **special characters** for navigation.
 
-### Examples
+## Example with Various Options
 
 - **Go to /etc directory**
   ```bash
