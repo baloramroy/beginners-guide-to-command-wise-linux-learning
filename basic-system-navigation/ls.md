@@ -1,7 +1,7 @@
 
 # ls – List files and directories
 
-The `ls` command is used to list directory contents in Linux and Unix systems. It displays files and directories in the current working directory or specified location, showing information such as names, permissions, sizes, and timestamps depending on the options used.
+The `ls` command is used to **list** directory contents in Linux and Unix systems. It displays **files and directories** in the current working directory or specified location, showing information such as **names, permissions, sizes, and timestamps** depending on the **options** used.
 
 **Options**
 
