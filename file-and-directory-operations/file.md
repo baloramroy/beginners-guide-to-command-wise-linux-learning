@@ -1,4 +1,4 @@
-# `file` Command
+# `file` - Determine the type of a file
 
 **Description:**
 
