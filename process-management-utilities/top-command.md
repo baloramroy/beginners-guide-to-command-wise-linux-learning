@@ -1,13 +1,14 @@
 
 # `top` – Real Time Process Monitoring
 
+**Description:**
+
 The **top** command in Linux is a **real-time monitoring** tool that provides a **dynamic view** of your system's **processes and resource usage**.
 
----
 
-### Help and General Settings
+## Help and General Settings
 
-- Help screen
+- **Help screen**
   
   ```
   ?
@@ -19,7 +20,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To quickly view all commands inside top.
 
-- Quit top
+- **Quit top**
 
   ```
   q
@@ -31,11 +32,9 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To leave the top interface.
 
----
+## Toggles (Headers and CPU View)
 
-### Toggles (Headers and CPU View)
-
-- Toggle load average line
+- **Toggle load average line**
   
   ```
   l
@@ -47,7 +46,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To reduce or expand displayed system information.
 
-- Toggle task summary line
+- **Toggle task summary line**
 
   ```
   t
@@ -59,7 +58,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To simplify the screen or show more task details.
 
-- Toggle memory usage line
+- **Toggle memory usage line**
 
   ```
   m
@@ -71,7 +70,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To reduce clutter or focus on CPU/process info.
 
-- Toggle CPU single/per-core view
+- **Toggle CPU single/per-core view**
 
   ```
   1
@@ -83,11 +82,10 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To monitor CPU usage per core when needed.
 
----
 
-### Refresh and Display Settings
+## Refresh and Display Settings
 
-- Change refresh rate
+- **Change refresh rate**
 
   ```
   s
@@ -99,11 +97,10 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To change how frequently top updates.
 
----
 
-### Highlighting Options
+## Highlighting Options
 
-- Enable/Disable Reverse Highlighting for Running Processes
+- **Enable/Disable Reverse Highlighting for Running Processes**
   
   ```
   b
@@ -115,7 +112,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To easily spot active processes.
   
-- Enable Bold Headers and Running Processes
+- **Enable Bold Headers and Running Processes**
   
   ```
   B
@@ -124,11 +121,10 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Headers and running processes appear in bold.
   
----
 
-### Thread Management
+## Thread Management
 
-- Toggle Between Process and Thread View
+- **Toggle Between Process and Thread View**
   
   ```
   H
@@ -137,11 +133,10 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Switches between process-only view and per-thread view.
 
----
 
-### Filtering and Sorting
+## Filtering and Sorting
 
-- Filter Processes by User
+- **Filter Processes by User**
 
   ```
   u
@@ -154,15 +149,13 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   ```
 
 
-  - Prompts for a username:
-  
+  - **Prompts for a username:**
     Username to filter by: `broy`
-
   
     **Output:**
     Then shows only that user’s processes.
 
-- Sort by Memory Usage
+- **Sort by Memory Usage**
   
   ```
   M
@@ -171,7 +164,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Sorts processes by memory usage (descending).
   
-- Sort by CPU Usage
+- **Sort by CPU Usage**
   
   ```
   P
@@ -180,11 +173,10 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Sorts processes by CPU usage (descending).
 
----
 
-### Process Management
+## Process Management
 
-- Kill a process
+- **Kill a process**
   
   ```
   k
@@ -193,7 +185,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Prompts for PID and optional signal.
   
-- Renice a process (Change Priority)
+- **Renice a process (Change Priority)**
   
   ```
   r
@@ -205,11 +197,10 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To adjust process priority.
 
----
 
-### Customization
+## Customization
 
-- Manage Columns (Fields)
+- **Manage Columns (Fields)**
   
   ```
   f
@@ -218,7 +209,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Opens field management menu for adding/removing/reordering columns.
 
-- Save Current Top Configuration
+- **Save Current Top Configuration**
 
   ```
   W
