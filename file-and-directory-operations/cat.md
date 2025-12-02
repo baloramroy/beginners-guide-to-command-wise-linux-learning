@@ -54,7 +54,11 @@
   ```bash
   cat -A config.txt
   ```
-  >**Output:** Tabs displayed as ^I, End of line as $, Non-printable chars shown  
+  **Output:**
+  - Tabs displayed as ^I
+  - End of line as $
+  - Non-printable chars shown
+  
   >**Purpose:** Debug formatting issues, YAML indent issues, etc.
 
 - Show end of lines only (-E)
