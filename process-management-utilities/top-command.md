@@ -124,7 +124,7 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Output:**
   Headers and running processes appear in bold.
   
-  ---
+---
 
 ### Thread Management
 
