@@ -5,6 +5,26 @@
 
 The **top** command in Linux is a **real-time monitoring** tool that provides a **dynamic view** of your system's **processes and resource usage**.
 
+**Options:**
+* `?` - Display help screen with all keyboard shortcuts.
+* `q` - Quit top and return to the shell.
+* `l` - Toggle load average line (1m/5m/15m).
+* `t` - Toggle task summary line.
+* `m` - Toggle memory and swap usage lines.
+* `1` - Toggle between combined CPU line or per-core CPU lines.
+* `s` - Change refresh rate (update interval in seconds).
+* `b` - Enable/disable reverse highlighting for running processes.
+* `B` - Enable bold headers and running processes.
+* `H` - Toggle between process view and thread view.
+* `u` or `U` - Filter processes by username.
+* `M` - Sort processes by memory usage (descending).
+* `P` - Sort processes by CPU usage (descending).
+* `k` - Kill a process (prompts for PID and signal).
+* `r` - Renice a process (change priority).
+* `f` - Manage columns/fields (add/remove/reorder).
+* `W` - Save current top configuration to `~/.toprc`.
+* `E` (Shift+E) - Cycle memory units in summary area (KiB → MiB → GiB...).
+* `e` - Cycle memory units in process list (KiB → MiB → GiB...).
 
 ## Help and General Settings
 
