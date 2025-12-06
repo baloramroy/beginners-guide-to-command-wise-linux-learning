@@ -82,6 +82,17 @@ The **top** command in Linux is a **real-time monitoring** tool that provides a 
   **Purpose:**
   To monitor CPU usage per core when needed.
 
+## View top in Human Readable value
+
+- **Press `Shift + E` to cycle through memory display units**
+  ```
+  E
+  ```
+  **Output**
+  This changes the units at the top of each column (affects multiple columns)
+
+  **Note**
+  Units cycle through: `KiB` → `MiB` → `GiB` → `TiB` → `PiB` → `EiB`
 
 ## Refresh and Display Settings
 
