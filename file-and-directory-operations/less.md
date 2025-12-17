@@ -48,6 +48,7 @@ View large files one page at a time. Allows forward and backward navigation, sea
 * After searching:
   * **n** → next match
   * **N** → previous match
+  * **ESC** → quit search
 
 **Go to Top/Bottom**
 * Top: **g**
