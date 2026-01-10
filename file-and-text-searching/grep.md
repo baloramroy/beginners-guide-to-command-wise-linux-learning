@@ -1,6 +1,6 @@
 # `grep` - Search for Pattern in File
 
-**Description:**
+## Description:
 The grep command in Linux is a powerful tool used to search for text patterns within files. The name grep stands for Global Regular Expression Print.
 
 **Options:**
@@ -13,6 +13,8 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   * `-v` – Invert the match
   * `-w` – Match whole words
   * `--color` – Highlight matches
+
+---
 
 ## Basic & Most Common grep Commands
 
@@ -32,29 +34,31 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```bash
   grep -v "pattern" file.txt
   ```
-  **Output:** Lines NOT matching the pattern
+  **Output:** Lines NOT matching the pattern\
   **Purpose:** Filter unwanted entries (very useful in logs).
 
 - Count matching lines
   ```bash
   grep -c "pattern" file.txt
   ```
-  **Output:** Number of matched lines
+  **Output:** Number of matched lines\
   **Purpose:** Count how many times a pattern appears.
 
 - Match whole words only
   ```bash
   grep -w "pattern" file.txt
   ```
-  **Output:** Only whole word matches
+  **Output:** Only whole word matches\
   **Purpose:** Avoid partial matches like “car” matching “scary”.
 
 - Search using patterns from a file
   ```bash
   grep -f patterns.txt file.txt
   ```
-  **Output:** Matches any pattern listed in file
+  **Output:** Matches any pattern listed in file\
   **Purpose:** Bulk multi-pattern searching.
+
+---
 
 ## Search Across Files & Directories
 
@@ -62,29 +66,31 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```bash
   grep -r "pattern" /var/log/
   ```
-  **Output:** Matches from files inside directories
+  **Output:** Matches from files inside directories\
   **Purpose:** Search logs/configs deeply.
 
 - Search recursively including symlinks
   ```bash
   grep -R "pattern" /etc/
   ```
-  **Output:** Recursive search with symlink follow
+  **Output:** Recursive search with symlink follow\
   **Purpose:** Explore config folders completely.
 
 - Show only filenames that contain the pattern
   ```bash
   grep -l "pattern" *.log
   ```
-  **Output:** File names with matches
+  **Output:** File names with matches\
   **Purpose:** Quickly identify files with certain content.
 
 - Show filenames that do NOT contain the pattern
   ```bash
   grep -L "pattern" *.log
   ```
-  **Output:** File names without matches
+  **Output:** File names without matches\
   **Purpose:** Find missing configs or mismatched settings.
+
+---
 
 ## Output Formatting & Context Control
 
@@ -92,43 +98,45 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```bash
   grep -n "pattern" file.txt
   ```
-  **Output:** Line numbers + matching lines
+  **Output:** Line numbers + matching lines\
   **Purpose:** Locate exact lines.
 
 - Always show filename in output
   ```bash
   grep -H "pattern" *.conf
   ```
-  **Output:** Filename : matching line
+  **Output:** Filename : matching line\
   **Purpose:** Useful when piping or mixing outputs.
 
 - Show only the matching text
   ```bash
   grep -o "pattern" file.txt
   ```
-  **Output:** Only the matched portion
+  **Output:** Only the matched portion\
   **Purpose:** Extract values from logs/files.
 
 - Show match + 3 lines after it
   ```bash
   grep -A 3 "pattern" file.txt
   ```
-  **Output:** Match + after-context
+  **Output:** Match + after-context\
   **Purpose:** View follow-up logs after an event.
 
 - Show match + 3 lines before
   ```bash
   grep -B 3 "pattern" file.txt
   ```
-  **Output:** Match + before-context
+  **Output:** Match + before-context\
   **Purpose:** Inspect what led to an issue.
 
 - Show match + 3 lines before & after
   ```bash
   grep -C 3 "pattern" file.txt
   ```
-  **Output:** Match + surrounding context
+  **Output:** Match + surrounding context\
   **Purpose:** Understand full log context.
+
+---
 
 ## Using Regular Expressions
 
@@ -147,28 +155,32 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   grep "Linux\|World" example.txt
   ```
 
+---
+
 ## Performance & Script-Oriented Usage
 
 - Highlight matches in output
   ```bash
   grep --color=auto "pattern" file.txt
   ```
-  **Output:** Color-highlighted matches
+  **Output:** Color-highlighted matches\
   **Purpose:** Easier visual search in terminals.
 
 - Stop searching after first 5 matches
   ```bash
   grep -m 5 "pattern" large.log
   ```
-  **Output:** First five matches
+  **Output:** First five matches\
   **Purpose:** Faster search in huge logs.
 
 - Quiet mode (no output, exit code only)
   ```bash
   grep -q "pattern" file.txt
   ```
-  **Output:** No output
+  **Output:** No output\
   **Purpose:** Used in if-statements in scripts.
+
+---
 
 ## Combining grep With Other Tools
 
@@ -176,36 +188,38 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```bash
   ps aux | grep nginx
   ```
-  **Output:** Process lines containing nginx
+  **Output:** Process lines containing nginx\
   **Purpose:** Check if a service is running.
 
 - Search systemd journal for failures
   ```bash
   journalctl -u sshd | grep "Failed"
   ```
-  **Output:** SSH failed attempts
+  **Output:** SSH failed attempts\
   **Purpose:** Security & login analysis.
 
 - Filter kernel messages for errors
   ```bash
   dmesg | grep -i error
   ```
-  **Output:** Error messages from kernel
+  **Output:** Error messages from kernel\
   **Purpose:** Hardware & kernel debugging.
 
 - Search logs for errors/warnings
   ```bash
   cat /var/log/messages | grep -E "warn|error|fail"
   ```
-  **Output:** Warning/error/failure lines
+  **Output:** Warning/error/failure lines\
   **Purpose:** Log investigation.
 
 - Check which service is listening on port 80
   ```bash
   ss -tulpn | grep 80
   ```
-  **Output:** Port 80 process details
+  **Output:** Port 80 process details\
   **Purpose:** Web server troubleshooting.
+
+---
 
 ## Search Multiple Words with grep
 
@@ -240,6 +254,8 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```
   **Output:** Find lines containing both error AND database
 
+---
+
 ## Search Multiple Words from cat Output
 
 - Option A (OR condition)
@@ -252,6 +268,8 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   cat filename | grep -E "word1" | grep -E "word2"
   ```
 
+---
+
 ## Grep use in real life environment
 
 - Filtering lines from 22:07 to 22:12 that contain ERROR.
@@ -263,3 +281,5 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```bash
   grep -E '2025-12-16 22:0[7-9]|2025-12-16 22:1[0-2]' output.log | grep 'ERROR' | grep -v 'EXECUTED_SUCCESS'
   ```
+
+---
