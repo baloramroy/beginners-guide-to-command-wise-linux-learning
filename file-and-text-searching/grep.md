@@ -98,17 +98,17 @@ The grep command in Linux is a powerful tool used to search for text patterns wi
   ```bash
   grep -n "pattern" file.txt
   ```
-  **Output:** Line numbers + matching lines\
+  **Output:** Each matching line is **prefixed** with its corresponding **line number** from the file (e.g., `15:This line contains the pattern`).\
   **Purpose:** Locate exact lines.
 
-- Always show filename in output
+- Always include the filename in the output, even with a single file
   ```bash
   grep -H "pattern" *.conf
   ```
-  **Output:** Filename : matching line\
-  **Purpose:** Useful when piping or mixing outputs.
+  **Output:** Each match is shown with the format `filename: matching line` (e.g., `nginx.conf:server_name example.com;`).\
+  **Purpose:** Essential when searching multiple files or piping results to other commands.
 
-- Show only the matching text
+- Extract only the matching portion of text, not the entire line
   ```bash
   grep -o "pattern" file.txt
   ```
